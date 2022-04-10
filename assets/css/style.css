@@ -79,6 +79,9 @@ styling color for score text
     width: 60vw;
     height: 430px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 100px;
+    background-image: url(/assets/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
