@@ -88,7 +88,6 @@ styling for button images
     background-image: url(/assets/images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: yellow;
 }
 
 .spock, .paper {
@@ -103,6 +102,11 @@ styling for button images
     margin-left: 20px;
 }
 
-/* .rock, .lizard {
-    margin-top: 15px;
-} */
+.hands .hand {
+    cursor: pointer;
+    transition: all 0.25s;
+}
+ 
+.hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
