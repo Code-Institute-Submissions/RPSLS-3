@@ -64,12 +64,12 @@ styling color for score text
 */
 .score h1 {
     color: hsl(229, 64%, 46%);
-    font-size: 30px;
+    font-size: 56px;
 }
 
 .score p {
     color: hsl(229, 25%, 31%);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 2px;
