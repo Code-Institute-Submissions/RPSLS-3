@@ -120,7 +120,7 @@ styling/positioning for win/lose/draw screen
 
 .contest {
     width: 900px;
-    display: flex;
+    display: none;
     margin-top: 50px;
 }
 
@@ -163,6 +163,7 @@ styling/positioning for win/lose/draw screen
     border-radius: 6px;
     cursor: pointer;
     color: hsl(229, 25%, 31%);
+    transition: all 0.15s;
 }
 
 .newGame:hover {
