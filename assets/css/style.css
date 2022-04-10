@@ -115,7 +115,7 @@ animation/hover effects for button images
 }
 
 /*
-styling for win/lose/draw screen
+styling/positioning for win/lose/draw screen
 */
 
 .contest {
@@ -144,4 +144,28 @@ styling for win/lose/draw screen
 .handImageContainer {
     display: flex;
     justify-content: center;
+}
+
+.referee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.referee h1 {
+    font-size: 45px;
+}
+
+.newGame {
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+}
+
+.newGame:hover {
+    background-color: bisque;
+    transform: translate3d(0px, -2px, 0px);
 }
