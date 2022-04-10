@@ -76,7 +76,7 @@ styling for score text
 }
 
 /*
-styling for button images
+styling/positioning for button images
 */
 .hands {
     width: 60vw;
@@ -102,6 +102,9 @@ styling for button images
     margin-left: 20px;
 }
 
+/*
+animation/hover effects for button images
+*/
 .hands .hand {
     cursor: pointer;
     transition: all 0.25s;
