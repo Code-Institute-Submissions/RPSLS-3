@@ -76,7 +76,7 @@ styling color for score text
 }
 
 .hands {
-    width: 40vw;
+    width: 60vw;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
