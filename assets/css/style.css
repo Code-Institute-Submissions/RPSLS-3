@@ -16,3 +16,13 @@ body {
         #1f3757 0%, 
         #131537 100%);
 }
+
+.scoreboard {
+    width: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between; 
+}
