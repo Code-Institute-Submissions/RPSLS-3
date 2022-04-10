@@ -113,3 +113,35 @@ animation/hover effects for button images
 .hands .hand:hover {
     transform: translate3d(0px, -8px, 0px);
 }
+
+/*
+styling for win/lose/draw screen
+*/
+
+.contest {
+    width: 900px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.contest img {
+    height: 275px;
+    width: 275px;
+}
+
+.contest > div {
+    flex: 1;
+}
+
+.contest h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.handImageContainer {
+    display: flex;
+    justify-content: center;
+}
