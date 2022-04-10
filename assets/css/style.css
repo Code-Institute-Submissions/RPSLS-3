@@ -18,9 +18,9 @@ styling for the full viewport/game area
         134.34% 134.34% at 50% 0%,
         #1f3757 0%, 
         #131537 100%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*
@@ -28,7 +28,7 @@ styling for the full header that contains the title and scorecard
 */
 .scoreboard {
     width: 30vw;
-    border: 1px solid white;
+    border: 1px solid hsl(217, 16%, 45%);
     border-radius: 15px;
     margin-top: 50px;
     height: 150px;
@@ -57,4 +57,20 @@ styling for the scorecard
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*
+styling color for score text
+*/
+.score h1 {
+    color: hsl(229, 64%, 46%);
+    font-size: 30px;
+}
+
+.score p {
+    color: hsl(229, 25%, 31%);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
 }
