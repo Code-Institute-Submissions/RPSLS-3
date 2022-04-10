@@ -27,7 +27,7 @@ styling for the full viewport/game area
 styling for the full header that contains the title and scorecard
 */
 .scoreboard {
-    width: 30vw;
+    width: 60vw;
     border: 1px solid hsl(217, 16%, 45%);
     border-radius: 15px;
     margin-top: 50px;
@@ -73,4 +73,12 @@ styling color for score text
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 2px;
+}
+
+.hands {
+    width: 40vw;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
