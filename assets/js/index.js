@@ -144,10 +144,12 @@ const referee = (userHand, cpHand) => {
     
 }
 
+//set win lose draw text outcome
 const setDecision = (decision) => {
-    console.log(decision)
+    document.querySelector(".decision h1").innerText = decision;
 }
 
+// set new score
 const setScore = (score) => {
-    console.log(score)
+    document.querySelector(".score h1").innerText = score
 }
