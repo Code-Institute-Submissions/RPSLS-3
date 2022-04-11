@@ -6,18 +6,17 @@ RPSLS (Rock Paper Scissors Lizard Spock) is an adapatation of the classic game o
 
 ## Design And Planning
 
-### Wireframes
+### Design
 
 - __Original Design__
 
   - The original design and assets for the site were created by [Frontendmentor](https://www.frontendmentor.io/home) for their rock paper scissors challange.
-  - Whilst I used the style guide provded, I made choices that deviated from the recommendations as I worked through the project. See the style.md file to reference what was provided.
+  - Whilst I used the style guide provded, I made choices that deviated from the recommendations as I worked through the project. See the style-guide.md included in the project file to reference what was provided.
   - I decided to work from a desktop first approach as that is what I have been used to since starting my studies with CODEINSTITUTE.
 
 - __Color Choices__
 
   - The chosen colors for the site were chosen to emphasize the options and make them easily distinguisable for comparisons in the win/lose/draw section of the game. 
-  - The colors were checked initially to make sure their contrast would be adequate in terms of readability using https://webaim.org/resources/contrastchecker/
 
 ## Features 
 
@@ -34,6 +33,8 @@ RPSLS (Rock Paper Scissors Lizard Spock) is an adapatation of the classic game o
 
   - The main game area has all possible player choices laid out in an easy to view area.
   - Input areas are greatly implied by the use of animation and transitions of any clickable area in the games main area.
+
+![Screenshot 2022-04-11 at 09-16-26 RPSLS](https://user-images.githubusercontent.com/7358665/162715809-f27a89e5-41b0-4b1f-a6fd-1c43880c3adb.png)
 
 - __Outcome Screen__
 
@@ -103,7 +104,7 @@ To begin testing the site I checked all user interactions worked as expected in 
 
 ### Validator Testing 
 
-I have not yet ran the project through any validators as my time ran out and the project was not in a stage where validation would have been apprpriatly useful.
+I have not yet ran the project through any validators as my time ran out and the project was not in a stage where validation would have been appropriatly useful.
 Once at an appropriate level of completion, I would have conducted lighthouse, HTML, CSS, Javascript, accessibility and color contrast checks to make sure my project was in line with industry standard expectations.
 I would use any feedback from the checks to make suitable updates to my project as and where they were required.
 
@@ -119,28 +120,19 @@ The only bug that I found, where the score was being incremented on a succesful 
   - From the source section drop-down menu, select the Master Branch (may show as Main Branch)
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://sjcooper.github.io/lets-go-walkies/index.html 
-
-<img width="1237" alt="deploy" src="https://user-images.githubusercontent.com/7358665/155917884-0bc8b480-f935-4051-afee-9b147a7cc192.png">
+The live link can be found here - https://sjcooper.github.io/RPSLS/index.html 
 
 ## Credits 
 
 ### Content 
 
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- All maps were direct links from [Google maps](https://www.google.com/maps/@53.7750116,-2.7105935,15z)
+- The icons for rock paper and scissors were provided by [Frontendmentor](https://www.frontendmentor.io/home)
+- The icons for lizard and spock were created by myself in GIMP
 - This README was created using a template provided for the Love Running project from [Code Institute](https://codeinstitute.net/)
 - The fonts used by the site are from [Google Fonts](https://fonts.google.com/)
-- Favicon icons and files were taken from [Favicon.io](https://favicon.io/)
-- Color swatch image was taken from [coolors.co](https://coolors.co/)
-- Photo compression was done using [compresspng](https://compresspng.com/)
 
 ### Code
 
 - CSS Flex Grid design and implimentation was taken from [Codepen](https://codepen.io/), specifically Tania Rascias [Easist Flex Grid Ever](https://codepen.io/taniarascia/pen/rOLEGe/) which was shown to me by my mentor Malia Havlicek.
-- Code feedback was given by Malia Havlicek as part of my Mentor sessions. 
-- Other code was implimented from Code Institutes lessons including the Love Running Project indirectly from what I had learned from them.
+- Other code was implimented from Code Institutes lessons including the javascript modules and outside research on w3schools.
 
-### Media
-
-- The photos for the hero image and gallery page were all from [Unsplash](https://unsplash.com/). Any other photos are personal photos owned by myself.
