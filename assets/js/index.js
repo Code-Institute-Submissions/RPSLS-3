@@ -30,4 +30,8 @@ const pickComputerHand = () => {
     let hands = ["rock", "paper", "scissors", "lizard", "spock"]
     let cpHand = hands[Math.floor(Math.random() * 5)]
 
+
+  //show correct choice on win/lose/draw section when computer choice made
+  document.getElementById("computerPickImage").src = handOptions[cpHand];
+
 }
