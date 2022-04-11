@@ -8,6 +8,7 @@ const handOptions = {
     "spock": "/assets/images/Spock.png"
 }
 
+// initialise score to 0
 let SCORE = 0;
 
 const pickUserHand = (hand) => {
@@ -52,11 +53,11 @@ const referee = (userHand, cpHand) => {
     } 
     if(userHand == "rock" && cpHand == "scissors"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     } 
     if(userHand == "rock" && cpHand == "lizard"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }  
     if(userHand == "rock" && cpHand == "spock"){
         setDecision("YOU LOSE!")
@@ -66,7 +67,7 @@ const referee = (userHand, cpHand) => {
 
     if(userHand == "paper" && cpHand == "rock"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }
     if(userHand == "paper" && cpHand == "paper"){
         setDecision("IT'S A TIE!")
@@ -79,7 +80,7 @@ const referee = (userHand, cpHand) => {
     }  
     if(userHand == "paper" && cpHand == "spock"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }
 
 //functionality to decide who has won when user picks scissors
@@ -89,14 +90,14 @@ const referee = (userHand, cpHand) => {
     }
     if(userHand == "scissors" && cpHand == "paper"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     } 
     if(userHand == "scissors" && cpHand == "scissors"){
         setDecision("IT'S A TIE!")
     } 
     if(userHand == "scissors" && cpHand == "lizard"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }  
     if(userHand == "scissors" && cpHand == "spock"){
         setDecision("YOU LOSE!")
@@ -109,7 +110,7 @@ const referee = (userHand, cpHand) => {
     }
     if(userHand == "lizard" && cpHand == "paper"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     } 
     if(userHand == "lizard" && cpHand == "scissors"){
         setDecision("YOU LOSE!")
@@ -119,21 +120,21 @@ const referee = (userHand, cpHand) => {
     }  
     if(userHand == "lizard" && cpHand == "spock"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }
 
 //functionality to decide who has won when user picks spock
 
     if(userHand == "spock" && cpHand == "rock"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     }
     if(userHand == "spock" && cpHand == "paper"){
         setDecision("YOU LOSE!")
     } 
     if(userHand == "spock" && cpHand == "scissors"){
         setDecision("YOU WIN!!!")
-        setScore(SCORE + 1)
+        setScore(SCORE += 1)
     } 
     if(userHand == "spock" && cpHand == "lizard"){
         setDecision("YOU LOSE!")
@@ -142,6 +143,16 @@ const referee = (userHand, cpHand) => {
         setDecision("IT'S A TIE!")
     }
     
+}
+
+const restartGame = () => {
+    // reveal hand select page when user clicks restart button
+    let hands = document.querySelector(".hands");
+    hands.style.display = "flex";
+    
+    // hide the win/lose/draw page when user clicks restart button
+    let contest = document.querySelector(".contest");
+    contest.style.display = "none";
 }
 
 //set win lose draw text outcome
