@@ -24,7 +24,7 @@ const pickUserHand = (hand) => {
     document.getElementById("userPickImage").src = handOptions[hand];
 
     let cpHand = pickComputerHand();
-
+    referee(hand, cpHand) 
 }
 
 // function and array for computer picks
