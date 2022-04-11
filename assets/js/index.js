@@ -102,7 +102,25 @@ const referee = (userHand, cpHand) => {
         setDecision("YOU LOSE!")
     }
 
+//functionality to decide who has won when user picks lizard
 
+    if(userHand == "lizard" && cpHand == "rock"){
+        setDecision("YOU LOSE!")
+    }
+    if(userHand == "lizard" && cpHand == "paper"){
+        setDecision("YOU WIN!!!")
+        setScore(SCORE + 1)
+    } 
+    if(userHand == "lizard" && cpHand == "scissors"){
+        setDecision("YOU LOSE!")
+    } 
+    if(userHand == "lizard" && cpHand == "lizard"){
+        setDecision("IT'S A TIE!")
+    }  
+    if(userHand == "lizard" && cpHand == "spock"){
+        setDecision("YOU WIN!!!")
+        setScore(SCORE + 1)
+    }
 
 
 }
