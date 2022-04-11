@@ -1,108 +1,146 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# RPSLS
 
-Welcome Simon 'Cooper' Coupe,
+RPSLS (Rock Paper Scissors Lizard Spock) is an adapatation of the classic game of chance, Rock paper scissors or Ro Sham Bo. The purpose of this page is to allow the user to play a computer opponant that selects a random outcome to play with. The design of the page allows the user to easily understand what is required and how to interact with the program.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![RPSLS Main Page](https://user-images.githubusercontent.com/7358665/162696898-64934f9f-b565-4132-9df7-4b0a1d872570.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Design And Planning
 
-## Gitpod Reminders
+### Wireframes
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __Original Design__
 
-`python3 -m http.server`
+  - The original design and assets for the site were created by [Frontendmentor](https://www.frontendmentor.io/home) for their rock paper scissors challange.
+  - Whilst I used the style guide provded, I made choices that deviated from the recommendations as I worked through the project. See the style.md file to reference what was provided.
+  - I decided to work from a desktop first approach as that is what I have been used to since starting my studies with CODEINSTITUTE.
 
-A blue button should appear to click: _Make Public_,
+- __Color Choices__
 
-Another blue button should appear to click: _Open Browser_.
+  - The chosen colors for the site were chosen to emphasize the options and make them easily distinguisable for comparisons in the win/lose/draw section of the game. 
+  - The colors were checked initially to make sure their contrast would be adequate in terms of readability using https://webaim.org/resources/contrastchecker/
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features 
 
-A blue button should appear to click: _Make Public_,
+### Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+- __Title Bar And Scoreboard__
+ 
+  - This section allows the user to easily see the title of the game and visualise their current score tally.
+  - The title and scoeboard are static in position and always the usuer to easily understand and follow the flow of the game.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img width="774" alt="Titlebar and scorecard" src="https://user-images.githubusercontent.com/7358665/162699279-a0520adb-39d8-4f96-a382-5289107a10ab.png">
 
-To log into the Heroku toolbelt CLI:
+- __Main Game Area And User Selections__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - The main game area has all possible player choices laid out in an easy to view area.
+  - Input areas are greatly implied by the use of animation and transitions of any clickable area in the games main area.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Outcome Screen__
 
-------
+  - Once the user makes a selections the game shows a clearly laid out outcome showing the opponants choice, the players choice and text to clarify what the result of the choices was. These are either the user wins, the opponant wins or the game is a tie.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Lost](https://user-images.githubusercontent.com/7358665/162700048-1ad1adea-b57f-4157-91bb-9a3575a5d32a.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Won](https://user-images.githubusercontent.com/7358665/162700199-f3d33bd3-882f-4194-9f83-d54d0004550d.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Game Tied](https://user-images.githubusercontent.com/7358665/162700248-21cbd8a0-06e2-471a-b6fa-d3f58deac57b.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __The Scoreboard__ 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - The scoreboard allows the user to see a visual representation of how many succesful games they have played in this visit to the game. 
+  
+  <img width="174" alt="Scorecard" src="https://user-images.githubusercontent.com/7358665/162700926-fee4aba6-37f8-438d-a933-13ae3e897462.png">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __The Play Again Button__ 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - The reset button allows the user adequate time to recieve the result of the most recent game cycle. If the player requires more time then they can stay on the results screen as long as they require. If they want to replay more quickly then they have that option to do so by clicking reset when they are ready to do so.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img width="174" alt="Play Again" src="https://user-images.githubusercontent.com/7358665/162701677-b621b0a4-3541-456a-ac2a-db53a0de3ed2.png">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Required Features Left to Implement
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+N.B - I had worked on and completed this project to what I considered a satisfactory standard several weeks prior to submission. Whilst removing some old practice repos that were no longer required from my GitHub profile I must have also removed my project repo in error. When I came back to the project to review before submission, I therefore had no work and had to start over. Due to this I have had just under 36 hours to try to replicate my previous efforts and as such did not have adequate time to get through all the processes. I have decided to submit with these features missing (some of which are requirements and not extra features) and will outline where my project was to progress to if time had allowed.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- __Responsivness__
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  - I tackled this project from a desktop first approach. 
+  - Due to time lost I have not implimented responsivness yet for smaller viewport sizes and as such the game and UI breaks at smaller scales
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img width="918" alt="Medium UI Break" src="https://user-images.githubusercontent.com/7358665/162703119-481ee23f-37fb-4c7c-a868-226e2b5bd62d.png">
+<img width="463" alt="Small Ui Break" src="https://user-images.githubusercontent.com/7358665/162712607-ae7c4dd1-a98e-4eb5-a711-089119f660e7.png">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  - Positioning issues also arose with the player choice buttons and as such would need to be addressed before I considered the project completed.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### None Required Features to Implement in the Future
 
-------
+- __Rules Page__
 
-## FAQ about the uptime script
+  - A feature that could be implimented is a user accesible image or overlay, possibly toggled by a button or swith, which shows all the possible outcomes available to the player. As this is an extended version of the relativly simple original game with 5 choices instead of 3, there are 25 possible interactions instead of 9. 
+  - This would aid the player and lead to a more positive user expierience as they may not be able to memorise all possible interactions and there fore having them availble if required would be a useful tool.
+  - This could be easily implimented as an overlay which can be toggled by button or swith at the users discretion. This approach would aid in implimentation of this feauture on smaller sceens where having a seperate area for the history would tpotentially take too much space on the viewport. 
 
-**Why have you added this script?**
+- __Saving Scores When Leaving Page__
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  - A feature that could be implimented is a local save, potentially using cookies, to save the player score if the user navigates away from the game and returns at a later point. 
+  - This feauture would benefit from addition of a reset score button and functionality which would likely be added to the title and scoreboard area.
 
-**How will this affect me?**
+- __Sound__
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  - The addition of sound effects when users interactions occur and upon win/lose/draw conditions would emphasize the fun nature of the gameplay.
+  - This could easily be implimented in line with the onclick event listeners and functions within the javascript files.
+  - care would need to be taken to ensure the sound files are lightweight enough to not negativly impact load times, the flow of the game, or user expierience.
+  - This feauture would benefit from a mute toggle button/swith. Care would have to be taken to ensure that on page load any and all sounds are muted until the user decides to impliment them in the gameplay. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- __Previous Game Outcome History__
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  - Adding a visual representation of the previous game cycles outcomes could add an additional level of strategic gameplay elements for the user. Even though the computer opponant picks outcomes randomly, the player may engage with the extra layer of strategy brought by being able to review past choices, wins, loses and draws.
+  - This could be easily implimented as an overlay which can be toggled by button or swith at the users discretion. This approach would aid in implimentation of this feauture on smaller sceens where having a seperate area for the history would tpotentially take too much space on the viewport. 
 
-**So….?**
+## Testing 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+To begin testing the site I checked all user interactions worked as expected in Chrome, Firefox and Safari. This included checking every outcome for every user choice. As far as was observable there were no errors in any browser in terms of user interaction elements or code implimentation with the javascript. This was only tested at desktop viewport sizes as responsivness for smaller viewports had not yet been implimented as explained above.
 
-**Can I opt out?**
+### Validator Testing 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+I have not yet ran the project through any validators as my time ran out and the project was not in a stage where validation would have been apprpriatly useful.
+Once at an appropriate level of completion, I would have conducted lighthouse, HTML, CSS, Javascript, accessibility and color contrast checks to make sure my project was in line with industry standard expectations.
+I would use any feedback from the checks to make suitable updates to my project as and where they were required.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Unfixed Bugs
 
-**Anything more?**
+There are no bugs present that i am aware of with the project in it's current state.
+The only bug that I found, where the score was being incremented on a succesful game but not stored, has been addressed in a commit already.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Deployment
 
----
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch (may show as Main Branch)
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-Happy coding!
+The live link can be found here - https://sjcooper.github.io/lets-go-walkies/index.html 
+
+<img width="1237" alt="deploy" src="https://user-images.githubusercontent.com/7358665/155917884-0bc8b480-f935-4051-afee-9b147a7cc192.png">
+
+## Credits 
+
+### Content 
+
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- All maps were direct links from [Google maps](https://www.google.com/maps/@53.7750116,-2.7105935,15z)
+- This README was created using a template provided for the Love Running project from [Code Institute](https://codeinstitute.net/)
+- The fonts used by the site are from [Google Fonts](https://fonts.google.com/)
+- Favicon icons and files were taken from [Favicon.io](https://favicon.io/)
+- Color swatch image was taken from [coolors.co](https://coolors.co/)
+- Photo compression was done using [compresspng](https://compresspng.com/)
+
+### Code
+
+- CSS Flex Grid design and implimentation was taken from [Codepen](https://codepen.io/), specifically Tania Rascias [Easist Flex Grid Ever](https://codepen.io/taniarascia/pen/rOLEGe/) which was shown to me by my mentor Malia Havlicek.
+- Code feedback was given by Malia Havlicek as part of my Mentor sessions. 
+- Other code was implimented from Code Institutes lessons including the Love Running Project indirectly from what I had learned from them.
+
+### Media
+
+- The photos for the hero image and gallery page were all from [Unsplash](https://unsplash.com/). Any other photos are personal photos owned by myself.
