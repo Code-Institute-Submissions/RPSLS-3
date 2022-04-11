@@ -1,5 +1,5 @@
 
-
+// dictionary for user picks
 const handOptions = {
     "rock": "assets/images/Rock.png",
     "paper": "/assets/images/Paper.png", 
@@ -21,6 +21,13 @@ const pickUserHand = (hand) => {
     //show correct choice on win/lose/draw section when user choice made
     document.getElementById("userPickImage").src = handOptions[hand];
 
+    pickComputerHand();
 
+}
+
+// function and array for computer picks
+const pickComputerHand = () => {
+    let hands = ["rock", "paper", "scissors", "lizard", "spock"]
+    let cpHand = hands[Math.floor(Math.random() * 5)]
 
 }
